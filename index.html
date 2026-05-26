@@ -17,13 +17,29 @@
 
     header {
       background-color: #ffffff;
-      padding: 80px 12%;
+      padding: 90px 12%;
       border-bottom: 1px solid #ddd;
     }
 
     h1 {
       font-size: 48px;
-      margin-bottom: 10px;
+      margin: 0 0 12px;
+      letter-spacing: -0.5px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
     }
 
     .subtitle {
@@ -33,22 +49,24 @@
     }
 
     .intro {
-      max-width: 760px;
+      max-width: 820px;
       font-size: 18px;
     }
 
     .button-group {
-      margin-top: 30px;
+      margin-top: 32px;
     }
 
     .button {
       display: inline-block;
       margin-right: 12px;
+      margin-bottom: 10px;
       padding: 12px 18px;
       border: 1px solid #222;
       color: #222;
       text-decoration: none;
       border-radius: 4px;
+      font-size: 15px;
     }
 
     .button:hover {
@@ -57,21 +75,16 @@
     }
 
     main {
-      max-width: 900px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 50px 12%;
+      padding: 56px 12%;
     }
 
     section {
-      margin-bottom: 56px;
+      margin-bottom: 64px;
     }
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 18px;
-    }
-
-    .project {
+    .card {
       background-color: #ffffff;
       padding: 24px;
       margin-bottom: 20px;
@@ -79,21 +92,43 @@
       border-radius: 8px;
     }
 
-    .project h3 {
-      margin-top: 0;
-    }
-
     .meta {
       color: #666;
       font-size: 14px;
+      margin-top: 0;
+    }
+
+    .skills-list {
+      background-color: #ffffff;
+      padding: 24px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 32px;
       color: #666;
       font-size: 14px;
       border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 64px 8%;
+      }
+
+      main {
+        padding: 40px 8%;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .subtitle {
+        font-size: 19px;
+      }
     }
   </style>
 </head>
@@ -107,102 +142,141 @@
     </p>
 
     <p class="intro">
-  I am an architectural designer and UBC High Performance Buildings student based in Vancouver,
-  with professional experience at Atkins, Nikken Sekkei, and AECOM Shanghai. My work focuses on
-  architectural design, sustainable retrofit, energy performance, façade renewal, and existing
-  building transformation.
-</p>
+      I am an architectural designer and a UBC High Performance Buildings student based in Vancouver,
+      with professional experience at Atkins, Nikken Sekkei, and AECOM Shanghai. My work focuses on
+      architectural design, sustainable retrofit, energy performance, façade renewal, and existing
+      building transformation.
+    </p>
+
     <div class="button-group">
       <a class="button" href="#projects">View Projects</a>
+      <a class="button" href="#experience">Experience</a>
       <a class="button" href="#contact">Contact</a>
     </div>
   </header>
 
   <main>
     <section id="about">
-  <h2>About</h2>
+      <h2>About</h2>
 
-  <p>
-    I am an architectural designer with over ten years of professional experience in architectural design,
-    project coordination, and design management. Before moving to Vancouver, I worked in Shanghai with
-    Atkins, Nikken Sekkei, and AECOM, contributing to architectural projects from design development to
-    project coordination and client-facing communication.
-  </p>
+      <p>
+        I am an architectural designer with over ten years of professional experience in architectural design,
+        project coordination, and design management. Before moving to Vancouver, I worked in Shanghai with
+        Atkins, Nikken Sekkei, and AECOM, contributing to architectural projects from design development to
+        project coordination and client-facing communication.
+      </p>
 
-  <p>
-    My academic background includes a Bachelor of Architecture from Nanjing Tech University, an MA in
-    Architectural Design from the University of Sheffield, and current graduate studies in High Performance
-    Buildings at the University of British Columbia. My current interests focus on sustainable retrofit,
-    building performance, energy modeling, façade renewal, and the transformation of existing buildings.
-  </p>
-</section>
-<section id="education">
-  <h2>Education</h2>
+      <p>
+        My academic background includes a Bachelor of Architecture from Nanjing Tech University,
+        an MA in Architectural Design from the University of Sheffield, and current graduate studies
+        in High Performance Buildings at the University of British Columbia. My current interests
+        focus on sustainable retrofit, building performance, energy modeling, façade renewal, and
+        the transformation of existing buildings.
+      </p>
+    </section>
 
-  <div class="project">
-    <h3>University of British Columbia</h3>
-    <p class="meta">High Performance Buildings | 2025 – Present</p>
-    <p>
-      Current studies focusing on building performance, energy modeling, sustainable design, and high-performance building strategies.
-    </p>
-  </div>
+    <section id="education">
+      <h2>Education</h2>
 
-  <div class="project">
-    <h3>University of Sheffield</h3>
-    <p class="meta">MA Architectural Design | 2012 – 2013</p>
-    <p>
-      Graduate study in architectural design, design research, and architectural representation.
-    </p>
-  </div>
+      <div class="card">
+        <h3>University of British Columbia</h3>
+        <p class="meta">High Performance Buildings | 2025 – Present</p>
+        <p>
+          Current studies focusing on high-performance buildings, energy modeling, sustainable design,
+          building systems, and retrofit strategies.
+        </p>
+      </div>
 
-  <div class="project">
-    <h3>Nanjing Tech University</h3>
-    <p class="meta">Bachelor of Architecture | 2007 – 2012</p>
-    <p>
-      Undergraduate training in architectural design, building technology, urban design, and architectural representation.
-    </p>
-  </div>
-</section>
+      <div class="card">
+        <h3>University of Sheffield</h3>
+        <p class="meta">MA Architectural Design | 2012 – 2013</p>
+        <p>
+          Graduate study in architectural design, design research, spatial thinking, and architectural representation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Nanjing Tech University</h3>
+        <p class="meta">Bachelor of Architecture | 2007 – 2012</p>
+        <p>
+          Undergraduate training in architectural design, building technology, urban design, and architectural representation.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+
+      <div class="card">
+        <h3>AECOM Shanghai</h3>
+        <p class="meta">Project Architect / Assistant Project Manager | 2018 – 2024</p>
+        <p>
+          Worked on architectural design, project coordination, consultant coordination, and project management support
+          across large-scale architectural projects. Responsibilities included design development, documentation review,
+          interdisciplinary coordination, and communication with project stakeholders.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Nikken Sekkei</h3>
+        <p class="meta">Architect | 2016 – 2017</p>
+        <p>
+          Contributed to architectural design development, drawing coordination, and design documentation within an
+          international design practice.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Atkins Shanghai</h3>
+        <p class="meta">Architect | 2014 – 2016</p>
+        <p>
+          Participated in architectural design, concept development, and project documentation for commercial and
+          mixed-use projects.
+        </p>
+      </div>
+    </section>
+
     <section id="projects">
       <h2>Selected Projects</h2>
 
-      <div class="project">
+      <div class="card">
         <h3>Integrated Retrofit Assessment for an Office Tower in Wuxi</h3>
-
-        <p class="meta">
-          Retrofit Strategy / Energy Performance / Façade Renewal
-        </p>
-
+        <p class="meta">Retrofit Strategy / Energy Performance / Façade Renewal</p>
         <p>
-          A high-performance building assessment exploring retrofit opportunities for an existing Grade-A office tower
-          in Wuxi, China. The project focuses on façade aging, HVAC system improvement, energy performance, and asset
-          competitiveness.
+          A high-performance building assessment for an existing Grade-A office tower in Wuxi, China.
+          The project explores façade renewal, HVAC improvement, operational energy reduction, and asset
+          competitiveness through an integrated retrofit framework.
         </p>
       </div>
 
-      <div class="project">
-        <h3>Architectural Design Project</h3>
-
-        <p class="meta">
-          Architectural Design / Research / Representation
-        </p>
-
+      <div class="card">
+        <h3>Selected Architectural Design Work</h3>
+        <p class="meta">Architectural Design / Research / Representation</p>
         <p>
-          Selected architectural design work demonstrating spatial thinking, design research, and visual communication.
-          This section will be updated with project images, drawings, and design descriptions.
+          Selected architectural design work demonstrating spatial thinking, design research, concept development,
+          and visual communication. This section will be updated with project images, drawings, and design descriptions.
         </p>
       </div>
 
-      <div class="project">
-        <h3>Energy Modeling and Building Performance Studies</h3>
-
-        <p class="meta">
-          HPB / Simulation / Sustainability
-        </p>
-
+      <div class="card">
+        <h3>Building Performance and Energy Modeling Studies</h3>
+        <p class="meta">HPB / Simulation / Sustainability</p>
         <p>
-          Coursework and independent studies related to energy modeling, passive design, building systems, and sustainable
-          retrofit strategies.
+          Coursework and independent studies related to energy modeling, passive design, building systems,
+          and sustainable retrofit strategies, including tools such as eQuest, IESVE, Ladybug, and Honeybee.
+        </p>
+      </div>
+    </section>
+
+    <section id="certification">
+      <h2>Certification</h2>
+
+      <div class="card">
+        <h3>LEED Green Associate</h3>
+        <p class="meta">Sustainable Design / Green Building</p>
+        <p>
+          Credential demonstrating knowledge of green building principles, sustainable design strategies,
+          and the LEED rating system.
         </p>
       </div>
     </section>
@@ -210,17 +284,36 @@
     <section id="skills">
       <h2>Skills</h2>
 
-      <p>
-        Architectural Design · Retrofit Strategy · Energy Modeling · Rhino · Grasshopper · IESVE · eQuest ·
-        Ladybug / Honeybee · Adobe Creative Suite · LEED GA
-      </p>
+      <div class="skills-list">
+        <p>
+          <strong>Design and Coordination:</strong>
+          Architectural Design · Project Coordination · Design Management · Retrofit Strategy ·
+          Façade Renewal · Sustainable Design
+        </p>
+
+        <p>
+          <strong>Building Performance:</strong>
+          Energy Modeling · Building Performance Analysis · Passive Design · Sustainable Retrofit
+        </p>
+
+        <p>
+          <strong>Software:</strong>
+          BIM · AutoCAD · Rhino · Grasshopper · Ladybug · Honeybee · eQuest · IESVE ·
+          InDesign · Illustrator · Photoshop
+        </p>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
 
-      <p>Email: lynne.zhangsh@.com</p>
-      <p>Location: Vancouver, BC</p>
+      <p>
+        Email: lynne.zhangsh@outlook.com
+      </p>
+
+      <p>
+        Location: Vancouver, BC
+      </p>
     </section>
   </main>
 
